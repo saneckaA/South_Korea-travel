@@ -4,8 +4,6 @@ const hideShowText__foodSection = (sectionFood__buttonElement) => {
     } else {
         sectionFood__buttonElement.innerText = "Hide";
     }
-
-
 };
 
 const hideShowText__cultureSection = (sectionCulture__buttonElement) => {
@@ -45,27 +43,34 @@ const init = () => {
         hideShowText__cultureSection(sectionCulture__buttonElement);
 
     });
-}
+};
 
 init();
 
-
-
-
-
-
-
-let sectionTravel__buttonElement = document.querySelector(".js-show-hideSectionTravelButton");
-let foldableContainerTravelElement = document.querySelector(".js-foldableTravelContainer");
-
-sectionTravel__buttonElement.addEventListener("click", () => {
-    foldableContainerTravelElement.classList.toggle("section__foldableContainer--hide");
-});
-
-sectionTravel__buttonElement.addEventListener("click", () => {
+const hideShowText__travelSection = (sectionTravel__buttonElement) => {
     if (sectionTravel__buttonElement.innerText === "Hide") {
         sectionTravel__buttonElement.innerText = "Show";
     } else {
         sectionTravel__buttonElement.innerText = "Hide";
     }
+};
+
+
+const init2 = () => {
+
+
+const sectionTravel__buttonElement = document.querySelector(".js-show-hideSectionTravelButton");
+const foldableContainerTravelElement = document.querySelector(".js-foldableTravelContainer");
+
+sectionTravel__buttonElement.addEventListener("click", () => {
+    foldableContainerTravelElement.classList.toggle("section__foldableContainer--hide");
+
+
+sectionTravel__buttonElement.addEventListener("click", hideShowText__travelSection);
+
+hideShowText__travelSection(sectionTravel__buttonElement);
+
 });
+};
+
+init2();
