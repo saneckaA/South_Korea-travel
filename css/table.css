@@ -1,0 +1,58 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.table__caption {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    caption-side: top;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.table__cell {
+    border: 1px solid rgb(209, 188, 188);
+    padding: 5px;
+    text-align: center;
+}
+
+.table__cell--header {
+    background-color: rgb(226, 160, 138);
+    color: white;
+    font-weight: normal;
+}
+
+.table__link {
+    color: rgb(139, 91, 129);
+    text-decoration: none;
+}
+
+.table__link:focus {
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 2px;
+    padding: 4px;
+}
+
+.table__link:hover {
+    color: lightpink;
+}
+
+.table__link:active {
+    color: rgb(100, 47, 74);
+}
+
+.table__koreanWords {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.table__cell:hover {
+    background-color: rgba(134, 110, 121, 0.719);
+
+}

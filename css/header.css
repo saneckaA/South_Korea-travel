@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+    font-size: 25px;
+}
+
+.header__paragraph {
+    font-size: 35px;
+    font-style: italic;
+}
+
+.header__image {
+    max-width: 120px;
+}

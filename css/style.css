@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    border-left: 1px solid #c5677a;
+    border-right: 1px solid #c5677a;
+}
+
