@@ -24,23 +24,34 @@ const init = () => {
 
 init();
 
-
-
-
-let sectionCulture__buttonElement = document.querySelector(".js-show-hideSectionCultureButton");
-let foldableContainerCultureElement = document.querySelector(".js-foldableCultureContainer");
-
-sectionCulture__buttonElement.addEventListener("click", () => {
-    foldableContainerCultureElement.classList.toggle("section__foldableContainer--hide");
-});
-
-sectionCulture__buttonElement.addEventListener("click", () => {
+const hideShowText2 = (sectionCulture__buttonElement) => {
     if (sectionCulture__buttonElement.innerText === "Hide") {
         sectionCulture__buttonElement.innerText = "Show";
     } else {
         sectionCulture__buttonElement.innerText = "Hide";
     }
-});
+};
+
+const init2 = () => {
+
+    const sectionCulture__buttonElement = document.querySelector(".js-show-hideSectionCultureButton");
+    const foldableContainerCultureElement = document.querySelector(".js-foldableCultureContainer");
+
+    sectionCulture__buttonElement.addEventListener("click", () => {
+        foldableContainerCultureElement.classList.toggle("section__foldableContainer--hide");
+
+        sectionCulture__buttonElement.addEventListener("click", hideShowText2);
+
+        hideShowText2(sectionCulture__buttonElement);
+
+    });
+}
+
+init2();
+
+
+
+
 
 let sectionTravel__buttonElement = document.querySelector(".js-show-hideSectionTravelButton");
 let foldableContainerTravelElement = document.querySelector(".js-foldableTravelContainer");
