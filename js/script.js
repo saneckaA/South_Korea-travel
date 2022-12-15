@@ -1,8 +1,18 @@
-const hideShowText = (sectionFood__buttonElement) => {
+const hideShowText__foodSection = (sectionFood__buttonElement) => {
     if (sectionFood__buttonElement.innerText === "Hide") {
         sectionFood__buttonElement.innerText = "Show";
     } else {
         sectionFood__buttonElement.innerText = "Hide";
+    }
+
+
+};
+
+const hideShowText__cultureSection = (sectionCulture__buttonElement) => {
+    if (sectionCulture__buttonElement.innerText === "Hide") {
+        sectionCulture__buttonElement.innerText = "Show";
+    } else {
+        sectionCulture__buttonElement.innerText = "Hide";
     }
 };
 
@@ -12,27 +22,15 @@ const init = () => {
     const sectionFood__buttonElement = document.querySelector(".js-show-hideSectionFoodButton");
     const foldableContainerFoodElement = document.querySelector(".js-foldableFoodContainer");
 
+
     sectionFood__buttonElement.addEventListener("click", () => {
         foldableContainerFoodElement.classList.toggle("section__foldableContainer--hide");
 
-        sectionFood__buttonElement.addEventListener("click", hideShowText);
+        sectionFood__buttonElement.addEventListener("click", hideShowText__foodSection);
 
-        hideShowText(sectionFood__buttonElement);
+        hideShowText__foodSection(sectionFood__buttonElement);
 
     });
-}
-
-init();
-
-const hideShowText2 = (sectionCulture__buttonElement) => {
-    if (sectionCulture__buttonElement.innerText === "Hide") {
-        sectionCulture__buttonElement.innerText = "Show";
-    } else {
-        sectionCulture__buttonElement.innerText = "Hide";
-    }
-};
-
-const init2 = () => {
 
     const sectionCulture__buttonElement = document.querySelector(".js-show-hideSectionCultureButton");
     const foldableContainerCultureElement = document.querySelector(".js-foldableCultureContainer");
@@ -40,14 +38,18 @@ const init2 = () => {
     sectionCulture__buttonElement.addEventListener("click", () => {
         foldableContainerCultureElement.classList.toggle("section__foldableContainer--hide");
 
-        sectionCulture__buttonElement.addEventListener("click", hideShowText2);
 
-        hideShowText2(sectionCulture__buttonElement);
+        sectionCulture__buttonElement.addEventListener("click", hideShowText__cultureSection);
+
+
+        hideShowText__cultureSection(sectionCulture__buttonElement);
 
     });
 }
 
-init2();
+init();
+
+
 
 
 
