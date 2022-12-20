@@ -6,6 +6,8 @@ Korean quisine, culture and intresting places to visit there. Additionally in ev
 At the bottom of the site by clicking one of icons you will be transfer to instagram or facebook pages where you can find more riveting stuff 
 or you can write to me an e-mail if you want to get know more about this beautiful country.
 
+## How it works:
+
 ![](https://github.com/saneckaA/South_Korea-travel/blob/main/images/Animation-southkorea.gif?raw=true)
 
 ## Technologies used in this project:
